@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblikovanje Teksta</title>
+    <style>
+        /* Naslov */
+        h1 {
+            text-transform: uppercase; /* Sva slova velika */
+            transition: box-shadow 0.3s; /* Animacija za sjenu */
+        }
+
+        h1:hover {
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sjena kad se prijeđe mišem */
+        }
+
+        /* Prvi paragraf */
+        p:first-of-type {
+            letter-spacing: 2px; /* Razmak između slova */
+            word-spacing: 7px; /* Razmak između riječi */
+        }
+
+        /* Drugi paragraf */
+        p:last-of-type {
+            line-height: 2; /* Razmak između linija (2 = 20px za font veličine 10px) */
+        }
+
+        /* Svi paragrafi */
+        p {
+            text-indent: 50px; /* Uvlaka odlomka */
+        }
+    </style>
+</head>
+<body>
+    <h1>Naslov Dokumenta</h1>
+    <p>
+        Ovo je prvi paragraf. Njegova slova imaju razmak od 2px, a riječi su razmaknute za 7px.
+        Tekst je primjer za zadatak.
+    </p>
+    <p>
+        Ovo je drugi paragraf. Njegove linije su udaljene za 20px. Ovaj tekst ilustrira razmak
+        između linija u tekstu i uvlačenje odlomaka.
+    </p>
+</body>
+</html>
